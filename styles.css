@@ -1,0 +1,127 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1558383409-ab7ef8db3e01?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    background-color: #facd7f;
+}
+
+h1 {
+    align-self: center;
+    color: #facd7f;
+    font-weight: 500;
+}
+
+.container {
+    margin-top: 115px;
+    background-color: #2a3d4e;
+    color: whitesmoke;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border: none;
+    margin: 10px;
+    font-size: medium;
+    width: 20%;
+}
+
+#addTip {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    font-size: medium;
+    color: black;
+}
+
+#calculate {
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    color: #bf1b0e;
+    font-size: large;
+    font-weight: 900;
+}
+
+#tip {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    border-radius: 7px;
+    text-align-last: center;
+    color: black;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+}
+
+.billR, .tipR, .totalR {
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 500px) {
+
+    .container {
+        margin-top: 15px;
+        width: 350px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .results {
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        width: 100%;
+    }
+
+    .billR, .tipR, .totalR {
+        margin-top: 5px;
+    }
+
+    form {
+        margin: 20px;
+        margin-top: 0px;
+        padding: 20px;
+    }
+
+    input {
+        width: 30%;
+    }
+}
